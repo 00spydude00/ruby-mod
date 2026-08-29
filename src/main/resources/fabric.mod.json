@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "ruby-mod",
+	"version": "${version}",
+	"name": "ruby mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ruby-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.rubymod.RubyMod"
+		],
+		"client": [
+			"name.modid.rubymod.client.RubyModClient"
+		]
+	},
+	"mixins": [
+		"ruby-mod.mixins.json",
+		{
+			"config": "ruby-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
