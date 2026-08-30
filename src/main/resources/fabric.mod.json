@@ -3,15 +3,15 @@
 	"id": "ruby-mod",
 	"version": "${version}",
 	"name": "ruby mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is a mod with rubies, and ruby tools. Made just to learn fabric.",
 	"authors": [
-		"Me!"
+		"00spydude00"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/ruby-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
