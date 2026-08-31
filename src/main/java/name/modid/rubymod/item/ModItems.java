@@ -15,10 +15,13 @@ public class ModItems {
 		return item;
 	}
 	public static final Item RUBY = register(ModItemIds.RUBY, Item::new, new Item.Properties());
+	public static final Item RUBY_SWORD = register(ModItemIds.RUBY_SWORD, Item::new, new Item.Properties().sword(Tools.RUBY_TOOL_MATERIAL, 6f, -2.4f));
 	// Get the event for modifying entries in the ingredients group.
 	// And register an event handler that adds our suspicious item to the ingredients group.
 	public static void initialize() {
     	CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
     			.register((creativeTab) -> creativeTab.accept(ModItems.RUBY));
+      	CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT)
+      			.register((creativeTab) -> creativeTab.accept(ModItems.RUBY_SWORD));
 	}
 }

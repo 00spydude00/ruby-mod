@@ -11,6 +11,7 @@ public class ModItemIds {
 		return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(RubyMod.MOD_ID, name));
 	}
 	public static final ResourceKey<Item> RUBY = create("ruby");
+	public static final ResourceKey<Item> RUBY_SWORD = create("ruby_sword");
 	public static void initialize() {
 
 	}
