@@ -12,6 +12,7 @@ public class ModItemIds {
 	}
 	public static final ResourceKey<Item> RUBY = create("ruby");
 	public static final ResourceKey<Item> RUBY_SWORD = create("ruby_sword");
+	public static final ResourceKey<Item> RUBY_PICKAXE = create("ruby_pickaxe");
 	public static void initialize() {
 
 	}
