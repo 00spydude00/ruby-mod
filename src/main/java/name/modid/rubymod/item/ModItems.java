@@ -16,7 +16,8 @@ public class ModItems {
 	}
 	public static final Item RUBY = register(ModItemIds.RUBY, Item::new, new Item.Properties());
 	public static final Item RUBY_SWORD = register(ModItemIds.RUBY_SWORD, Item::new, new Item.Properties().sword(Tools.RUBY_TOOL_MATERIAL, 6f, -2.4f));
-	public static final Item RUBY_PICKAXE = register(ModItemIds.RUBY_PICKAXE, Item::new, new Item.Properties().pickaxe(Tools.RUBY_TOOL_MATERIAL, 0f, 0f));
+	public static final Item RUBY_PICKAXE = register(ModItemIds.RUBY_PICKAXE, Item::new, new Item.Properties().pickaxe(Tools.RUBY_TOOL_MATERIAL, 4f, -1.2f));
+	public static final Item RUBY_SHOVEL = register(ModItemIds.RUBY_SHOVEL, Item::new, new Item.Properties().shovel(Tools.RUBY_TOOL_MATERIAL, 0f, 2f));
 	// Get the event for modifying entries in the ingredients group.
 	// And register an event handler that adds our suspicious item to the ingredients group.
 	public static void initialize() {
@@ -26,5 +27,7 @@ public class ModItems {
       			.register((creativeTab) -> creativeTab.accept(ModItems.RUBY_SWORD));
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
     			.register((creativeTab) -> creativeTab.accept(ModItems.RUBY_PICKAXE));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+     			.register((creativeTab) -> creativeTab.accept(ModItems.RUBY_SHOVEL));
 	}
 }
