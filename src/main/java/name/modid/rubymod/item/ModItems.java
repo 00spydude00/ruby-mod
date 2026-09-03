@@ -11,7 +11,6 @@ import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.equipment.ArmorType;
-import name.modid.rubymod.item.Armor;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 
 public class ModItems {
