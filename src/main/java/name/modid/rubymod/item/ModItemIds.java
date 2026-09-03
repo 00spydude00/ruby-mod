@@ -16,6 +16,10 @@ public class ModItemIds {
 	public static final ResourceKey<Item> RUBY_SHOVEL = create("ruby_shovel");
 	public static final ResourceKey<Item> RUBY_AXE = create("ruby_axe");
 	public static final ResourceKey<Item> RUBY_HOE = create("ruby_hoe");
+	public static final ResourceKey<Item> RUBY_HELMET = create("ruby_helmet");
+	public static final ResourceKey<Item> RUBY_CHESTPLATE = create("ruby_chestplate");
+	public static final ResourceKey<Item> RUBY_LEGGINGS = create("ruby_leggings");
+	public static final ResourceKey<Item> RUBY_BOOTS = create("ruby_boots");
 	public static void initialize() {
 
 	}
