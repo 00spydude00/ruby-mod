@@ -23,7 +23,7 @@ public class ModItems {
 	public static final Item RUBY_SWORD = register(ModItemIds.RUBY_SWORD, Item::new, new Item.Properties().sword(Tools.RUBY_TOOL_MATERIAL, 6f, -2.4f));
 	public static final Item RUBY_PICKAXE = register(ModItemIds.RUBY_PICKAXE, Item::new, new Item.Properties().pickaxe(Tools.RUBY_TOOL_MATERIAL, 4f, -2.6f));
 	public static final Item RUBY_SHOVEL = register(ModItemIds.RUBY_SHOVEL, settings -> new ShovelItem(Tools.RUBY_TOOL_MATERIAL, 0f, -1f, settings), new Item.Properties());
-	public static final Item RUBY_AXE = register(ModItemIds.RUBY_AXE, settings -> new AxeItem(Tools.RUBY_TOOL_MATERIAL, 7f, -3.3f, settings), new Item.Properties());
+	public static final Item RUBY_AXE = register(ModItemIds.RUBY_AXE, settings -> new AxeItem(Tools.RUBY_TOOL_MATERIAL, 9f, -3f, settings), new Item.Properties());
 	public static final Item RUBY_HOE = register(ModItemIds.RUBY_HOE, settings -> new HoeItem(Tools.RUBY_TOOL_MATERIAL, -1f, 0f, settings), new Item.Properties());
 	public static final Item RUBY_HELMET = register(
 			ModItemIds.RUBY_HELMET,
