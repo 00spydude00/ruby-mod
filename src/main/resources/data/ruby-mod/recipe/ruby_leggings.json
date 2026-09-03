@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "W W",
+    "W W"
+  ],
+  "key": {
+    "W": "ruby-mod:ruby"
+  },
+  "result": {
+    "id": "ruby-mod:ruby_leggings"
+  }
+}
