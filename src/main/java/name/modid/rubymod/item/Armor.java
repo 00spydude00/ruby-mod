@@ -12,17 +12,17 @@ import java.util.Map;
 
 public class Armor {
     public static final ArmorMaterial RUBY_ARMOR_MATERIAL = new ArmorMaterial(
-        37,
+        37, // durability
         Map.of(
             ArmorType.HELMET, 3,
             ArmorType.CHESTPLATE, 8,
             ArmorType.LEGGINGS, 6,
             ArmorType.BOOTS, 3
-        ),
-        15,
+        ), // defense
+        15, // enchantability
         SoundEvents.ARMOR_EQUIP_DIAMOND,
-        3.0f,
-        0.1f,
+        3.0f, // armor toughness
+        0.1f, // knockback
         ModTags.REPAIRS_RUBY_ARMOR,
         ResourceKey.create(
             EquipmentAssets.ROOT_ID,
