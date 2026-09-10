@@ -1,6 +1,7 @@
 package name.modid.rubymod.item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.references.BlockItemId;
 import java.util.function.Function;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -29,8 +30,8 @@ public class ModBlocks {
 
 		return block;
 	}
-	public static final Block RUBY_ORE = register(ModBlockItemIds.RUBY_ORE, Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).requiresCorrectToolForDrops().strength(4.0f));
-	public static final Block DEEPSLATE_RUBY_ORE = register(ModBlockItemIds.DEEPSLATE_RUBY_ORE, Block::new, BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(6.0f));
+	public static final Block RUBY_ORE = register(ModBlockItemIds.RUBY_ORE, properties -> new DropExperienceBlock(net.minecraft.util.valueproviders.UniformInt.of(3, 7), properties), BlockBehaviour.Properties.of().sound(SoundType.STONE).requiresCorrectToolForDrops().strength(4.0f));
+	public static final Block DEEPSLATE_RUBY_ORE = register(ModBlockItemIds.DEEPSLATE_RUBY_ORE, properties -> new DropExperienceBlock(net.minecraft.util.valueproviders.UniformInt.of(3, 7), properties), BlockBehaviour.Properties.of().sound(SoundType.STONE).requiresCorrectToolForDrops().strength(6.0f));
 
 	public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS)
