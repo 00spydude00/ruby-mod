@@ -30,9 +30,13 @@ public class ModBlocks {
 		return block;
 	}
 	public static final Block RUBY_ORE = register(ModBlockItemIds.RUBY_ORE, Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).requiresCorrectToolForDrops().strength(4.0f));
+	public static final Block DEEPSLATE_RUBY_ORE = register(ModBlockItemIds.DEEPSLATE_RUBY_ORE, Block::new, BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(6.0f));
+
 	public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS)
             .register((creativeTab) -> creativeTab.accept(RUBY_ORE));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS)
+            .register((creativeTab) -> creativeTab.accept(DEEPSLATE_RUBY_ORE));
 	}
 
 }

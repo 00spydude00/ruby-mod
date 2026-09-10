@@ -12,5 +12,6 @@ public class ModBlockItemIds {
     }
 
     public static final BlockItemId RUBY_ORE = create("ruby_ore");
+    public static final BlockItemId DEEPSLATE_RUBY_ORE = create("deepslate_ruby_ore");
 
 }

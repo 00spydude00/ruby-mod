@@ -9,5 +9,6 @@
   "item.ruby-mod.ruby_chestplate": "Ruby Chestplate",
   "item.ruby-mod.ruby_leggings": "Ruby Leggings",
   "item.ruby-mod.ruby_boots": "Ruby Boots",
-  "block.ruby-mod.ruby_ore": "Ruby Ore"
+  "block.ruby-mod.ruby_ore": "Ruby Ore",
+  "block.ruby-mod.deepslate_ruby_ore": "Deepslate Ruby Ore"
 }
