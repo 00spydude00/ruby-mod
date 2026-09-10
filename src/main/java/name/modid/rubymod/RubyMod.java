@@ -19,12 +19,17 @@ import org.slf4j.LoggerFactory;
 public class RubyMod implements ModInitializer {
 	public static final String MOD_ID = "ruby-mod";
 
-    public static final ResourceKey<PlacedFeature> CUSTOM_ORE_PLACED_KEY =
+    public static final ResourceKey<PlacedFeature> RUBY_ORE_PLACED_KEY =
         ResourceKey.create(
             Registries.PLACED_FEATURE,
             Identifier.fromNamespaceAndPath("ruby-mod", "ruby_ore")
         );
 
+    public static final ResourceKey<PlacedFeature> DEEPSLATE_RUBY_ORE_PLACED_KEY =
+        ResourceKey.create(
+            Registries.PLACED_FEATURE,
+            Identifier.fromNamespaceAndPath("ruby-mod", "deepslate_ruby_ore")
+        );
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -41,7 +46,8 @@ public class RubyMod implements ModInitializer {
 		ModItemIds.initialize();
 		ModItems.initialize();
 		ModBlocks.initialize();
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, RUBY_ORE_PLACED_KEY);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, DEEPSLATE_RUBY_ORE_PLACED_KEY);
 
 		LOGGER.info("Hello Fabric world!");
 
