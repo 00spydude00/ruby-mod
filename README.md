@@ -18,7 +18,7 @@ They are meant to be an upgrade over the current best materials in the game (dia
 In future patches, ruby is planned to be balanced as more of an alternative for these materials.
 
 
-#### Obtaining Rubies
+### Obtaining Rubies
 
 
 Rubies can be obtained by mining Ruby Ore or Deepslate Ruby Ore with a Diamond or better pickaxe (including ruby pickaxes).
@@ -51,7 +51,7 @@ Armor includes:
 Helmet, Chestplate, Leggings, Boots
 
 
-#### Tool and Armor Recipes
+### Tool and Armor Recipes
 
 
 Recipes for tools and armor are the same as typical tool recipes with rubies substituted for other materials.
